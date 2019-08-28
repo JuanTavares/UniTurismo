@@ -61,10 +61,7 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-googlemaps": {
-        "API_KEY_FOR_ANDROID": "AIzaSyAqKlxETMZWb1ZThf4BJlPXnhmDBs4Mscs",
-        "API_KEY_FOR_IOS": "AIzaSyAqKlxETMZWb1ZThf4BJlPXnhmDBs4Mscs"
-      }
+      "cordova-plugin-googlemaps": {}
     }
   }
 }
