@@ -20,7 +20,7 @@ export class Tab2Page implements AfterContentInit {
 
   map: GoogleMap;
   waypoints = [{
-    title: 'TREKKING - PICO DO CORVADO  - UBATUBA - SP',
+    title: 'TREKKING - PICO DO CORCOVADO  - UBATUBA - SP',
     position: {
       lat: -23.449067,
       lng: -45.192604
@@ -77,6 +77,8 @@ export class Tab2Page implements AfterContentInit {
 
   loadMap() {
     Environment.setEnv({
+      'API_KEY_FOR_BROWSER_RELEASE': '',
+      'API_KEY_FOR_BROWSER_DEBUG': ''
     });
 
     const mapOptions: GoogleMapOptions = {
@@ -106,14 +108,9 @@ export class Tab2Page implements AfterContentInit {
         position: data.position
       });
       marker.on(GoogleMapsEvent.MARKER_CLICK).subscribe(() => {
-        console.log(marker.getPosition());
-        this.router.navigate(['/tabs/tab3', marker.getPosition()]);
+        this.router.navigate(['/tabs/tab3', marker.getTitle()]);
       });
     });
-  }
-
-  logador(data: any) {
-    console.log(data);
   }
 
 }

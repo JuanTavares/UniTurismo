@@ -1,30 +1,18 @@
 <ion-header>
   <ion-toolbar color="tertiary">
     <ion-title>
-      Pontos de referência
+      {{ interest.title }}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <img [src]="interest.img" class="interest-img">
+  <ion-list lines="none">
     <ion-list-header>
-      <ion-label>Restaurantes</ion-label>
+      <ion-label>Descrição</ion-label>
     </ion-list-header>
-    <ion-item>Item 1</ion-item>
-    <ion-item>Item 2</ion-item>
-    <ion-item>Item 3</ion-item>
-    <ion-item>Item 4</ion-item>
-    <ion-item>Item 5</ion-item>
-  </ion-list>
-  <ion-list>
-    <ion-list-header>
-      <ion-label>Hoteis</ion-label>
-    </ion-list-header>
-    <ion-item>Item 1</ion-item>
-    <ion-item>Item 2</ion-item>
-    <ion-item>Item 3</ion-item>
-    <ion-item>Item 4</ion-item>
-    <ion-item>Item 5</ion-item>
+    <ion-item>{{ interest.description }}</ion-item>
+
   </ion-list>
 </ion-content>
