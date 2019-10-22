@@ -1,5 +1,7 @@
 {
   "name": "UniTurismo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

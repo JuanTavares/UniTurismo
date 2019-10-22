@@ -1,41 +1,53 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
+  <ion-toolbar color="tertiary">
+    <div>
+      <ion-avatar class="ion-margin-bottom">
+        <img class="profile-img" src="../../assets/imgs/vini.png" alt="Vinicius" />
+      </ion-avatar>
+      <ion-label class="profile-name">Vinicius Carvalho</ion-label>
+    </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content scroll-y="false">
-  <img class="profile-img" src="/assets/shapes.svg" alt="" />
+<ion-content padding>
+  <ion-card>
+    <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="../../assets/imgs/20dias.png" alt="20 dias">
+        </ion-thumbnail>
+        <ion-label>
+          <h3 class="text-bold">20 Dias para sua aventura.</h3>
+          <p>O hotel aguarda para recebe-lo.</p>
+        </ion-label>
+    </ion-item>
+  </ion-card>
     <ion-card class="welcome-card">
       <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
+        <ion-card-subtitle>Minha ficha</ion-card-subtitle>
+        <ion-card-title>Vinicius Carvalho</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+        <p>Carioca amante de esportes radicais como <span class="sport-link">Surf</span> e <span class="sport-link">Mergulho</span></p>
       </ion-card-content>
+      <div class="d-flex justify-content-end">
+        <ion-button size="small" color="tertiary" fill="clear">
+          Editar
+        </ion-button>
+      </div>
     </ion-card>
-    <ion-list lines="none">
+    <ion-list>
       <ion-list-header>
-        <ion-label>Resources</ion-label>
+        <ion-label>
+          <h3 class="text-bold">Seus esportes</h3>
+        </ion-label>
       </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
+      <ion-item>
+        <ion-icon slot="start" color="medium" name="pin"></ion-icon>
+        <ion-label>Surf</ion-label>
       </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
+      <ion-item>
+        <ion-icon slot="start" color="medium" name="pin"></ion-icon>
+        <ion-label>Mergulho</ion-label>
       </ion-item>
     </ion-list>
 </ion-content>
